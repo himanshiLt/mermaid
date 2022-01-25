@@ -4,10 +4,10 @@ preRun:
         - yarn install
 preMerge:
   pattern:
-    - "./src/.*"
+    - "./src/**/*.spec.js"
 postMerge:
   pattern: 
-    - "./src/.*"
+    - "./src/**/*.spec.js"
 postRun:
      command:
         - yarn --version
